@@ -46,7 +46,6 @@ module.exports = {
         growlers: "growlers@http://localhost:8080/remoteEntry.js",
         cartReact: "cartReact@http://localhost:8101/remoteEntry.js",
         productReact: "productReact@http://localhost:8102/remoteEntry.js",
-        vanilaJs: "vanilaJs@http://localhost:8999/remoteEntry.js",
       },
       exposes: {},
       shared: {

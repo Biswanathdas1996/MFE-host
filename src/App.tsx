@@ -16,7 +16,7 @@ export const App = () => {
   return (
     <Router>
       <TopBar cartCount={cartCountItem} />
-      <div style={{ paddingBottom: 50 }} />
+      <div style={{ paddingBottom: 55 }} />
 
       <div>
         <Routes>
