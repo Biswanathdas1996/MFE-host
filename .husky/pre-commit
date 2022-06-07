@@ -4,4 +4,4 @@ DIRNAME = "$(dirname "$0")"
 
 echo "$DIRNAME/pre-commit: running code check"
 
-npm test
+snyk test

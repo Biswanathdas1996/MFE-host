@@ -43,9 +43,9 @@ module.exports = {
       name: "hostreact",
       filename: "remoteEntry.js",
       remotes: {
-        growlers: "growlers@http://localhost:8080/remoteEntry.js",
-        cartReact: "cartReact@http://localhost:8101/remoteEntry.js",
-        productReact: "productReact@http://localhost:8102/remoteEntry.js",
+        cartReact: "cartReact@https://mfe-cart.netlify.app/remoteEntry.js",
+        productReact:
+          "productReact@https://mfe-product.netlify.app/remoteEntry.js",
       },
       exposes: {},
       shared: {
