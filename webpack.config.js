@@ -46,7 +46,7 @@ module.exports = {
       remotes: {
         cartReact: "cartReact@https://mfe-cart.netlify.app/remoteEntry.js",
         // cartReact: "cartReact@http://localhost:8101/remoteEntry.js",
-        // productReact:
+        productReact:
           "productReact@https://mfe-product.netlify.app/remoteEntry.js",
         // productReact: "productReact@http://localhost:8102/remoteEntry.js",
       },
