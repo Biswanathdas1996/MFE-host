@@ -4,6 +4,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
+    // publicPath: "http://localhost:8081/",
     publicPath: "https://mfe-host.netlify.app/",
   },
 
@@ -44,8 +45,10 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes: {
         cartReact: "cartReact@https://mfe-cart.netlify.app/remoteEntry.js",
-        productReact:
+        // cartReact: "cartReact@http://localhost:8101/remoteEntry.js",
+        // productReact:
           "productReact@https://mfe-product.netlify.app/remoteEntry.js",
+        // productReact: "productReact@http://localhost:8102/remoteEntry.js",
       },
       exposes: {},
       shared: {

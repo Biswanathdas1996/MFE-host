@@ -4,6 +4,7 @@ import "./index.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import TopBar from "../pages/TopBar";
+import Footer from "../pages/Footer";
 import { Home } from "../pages/home";
 import { CartPage } from "../pages/cart";
 import AboutUs from "../pages/aboutUs";
@@ -28,6 +29,7 @@ export const App = () => {
         </Routes>
       </div>
       <AboutUs />
+      <Footer />
     </Router>
   );
 };

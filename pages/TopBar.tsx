@@ -49,7 +49,7 @@ const TopBar = ({ cartCount }) => {
             component="div"
             sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
           >
-            Online-Shop
+            Online-Shop MFE
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -94,7 +94,7 @@ const TopBar = ({ cartCount }) => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
           >
-            LOGO
+            Online-Shop MFE
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Link to="/" style={{ textDecoration: "none" }}>
@@ -106,14 +106,6 @@ const TopBar = ({ cartCount }) => {
                 Home
               </Button>
             </Link>
-
-            <Button
-              key={2}
-              onClick={() => document.dispatchEvent(eventOnAbout)}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              About
-            </Button>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
