@@ -1,3 +1,8 @@
+async function openUrl(url) {
+  browser.url(url);
+  browser.maximizeWindow();
+}
+
 async function doClick(element) {
   await element.waitForDisplayed();
   await element.click();
@@ -28,6 +33,7 @@ async function doWaitUntilAttributeEquals(
 }
 
 module.exports = {
+  openUrl,
   doClick,
   doSetValue,
   doGetAttribute,
