@@ -8,6 +8,8 @@ import Footer from "../pages/Footer";
 import { Home } from "../pages/home";
 import { CartPage } from "../pages/cart";
 import AboutUs from "../pages/aboutUs";
+import Register from "../pages/register";
+import Login from "../pages/login";
 
 export const App = () => {
   const [cartCountItem, setCartCountItem] = useState(0);
@@ -25,6 +27,8 @@ export const App = () => {
             path="/cart"
             element={<CartPage cartCount={cartCount} />}
           ></Route>
+          <Route path="/register" element={<Register />}></Route>
+          <Route path="/login" element={<Login />}></Route>
           <Route path="/" element={<Home cartCount={cartCount} />}></Route>
         </Routes>
       </div>

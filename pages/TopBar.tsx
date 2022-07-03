@@ -106,6 +106,38 @@ const TopBar = ({ cartCount }) => {
                 Home
               </Button>
             </Link>
+            {localStorage.getItem("userId") ? (
+              <Link to="/register" style={{ textDecoration: "none" }}>
+                <Button
+                  key={2}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  Account
+                </Button>
+              </Link>
+            ) : (
+              <>
+                <Link to="/register" style={{ textDecoration: "none" }}>
+                  <Button
+                    key={2}
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: "white", display: "block" }}
+                  >
+                    Register
+                  </Button>
+                </Link>
+                <Link to="/login" style={{ textDecoration: "none" }}>
+                  <Button
+                    key={2}
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: "white", display: "block" }}
+                  >
+                    Login
+                  </Button>
+                </Link>
+              </>
+            )}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
